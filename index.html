@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor with Live Preview</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Markdown Editor with Live Preview</h1>
+        </header>
+        
+        <div class="editor-container">
+            <div class="editor-section">
+                <h2>Input (Markdown)</h2>
+                <textarea id="markdown-input" placeholder="Type your markdown here..."></textarea>
+            </div>
+            
+            <div class="preview-section">
+                <h2>Preview (HTML)</h2>
+                <div id="markdown-preview" class="preview"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Start typing markdown in the left panel to see the formatted output on the right!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
